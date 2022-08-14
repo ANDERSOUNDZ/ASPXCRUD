@@ -13,5 +13,10 @@ namespace CRUD.Pages
         {
 
         }
+
+        protected void BtnCreate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
