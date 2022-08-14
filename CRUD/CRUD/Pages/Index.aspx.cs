@@ -34,7 +34,7 @@ namespace CRUD.Pages
 
         protected void BtnCreate_Click(object sender, EventArgs e)
         {
-            Response.Redirect("/Pages/CRUD.aspx?op=C");
+            Response.Redirect("~/Pages/CRUD.aspx?op=C");
         }
 
         protected void BtnRead_Click(object sender, EventArgs e)
@@ -43,7 +43,7 @@ namespace CRUD.Pages
             Button BtnConsultar = (Button)sender;
             GridViewRow selectedrow = (GridViewRow)BtnConsultar.NamingContainer;
             id = selectedrow.Cells[1].Text;
-            Response.Redirect("/Pages/CRUD.aspx?id="+id+"&op=R");
+            Response.Redirect("~/Pages/CRUD.aspx?id=" + id +"&op=R");
         }
 
         protected void BtnUpdate_Click(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace CRUD.Pages
             Button BtnConsultar = (Button)sender;
             GridViewRow selectedrow = (GridViewRow)BtnConsultar.NamingContainer;
             id = selectedrow.Cells[1].Text;
-            Response.Redirect("/Pages/CRUD.aspx?id=" + id + "&op=U");
+            Response.Redirect("~/Pages/CRUD.aspx?id=" + id + "&op=U");
         }
 
         protected void BtnDelete_Click(object sender, EventArgs e)
@@ -61,7 +61,7 @@ namespace CRUD.Pages
             Button BtnConsultar = (Button)sender;
             GridViewRow selectedrow = (GridViewRow)BtnConsultar.NamingContainer;
             id = selectedrow.Cells[1].Text;
-            Response.Redirect("/Pages/CRUD.aspx?id=" + id + "&op=D");
+            Response.Redirect("~/Pages/CRUD.aspx?id=" + id + "&op=D");
         }
     }
 }
