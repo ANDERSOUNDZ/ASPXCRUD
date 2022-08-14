@@ -6,7 +6,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="body" runat="server">
     <form runat="server">
-        <div class="mx-auto" style="width:300">
+        <div class="mx-auto" style="width:300px">
             <h2>
                 Listado de registros
             </h2>
