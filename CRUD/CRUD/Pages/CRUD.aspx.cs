@@ -26,6 +26,7 @@ namespace CRUD.Pages
                 {
                     sID = Request.QueryString["id"].ToString();
                     Cargar_datos();
+                    tbdate.TextMode = TextBoxMode.DateTime;
                 }
 
                 if (Request.QueryString["op"] != null)
